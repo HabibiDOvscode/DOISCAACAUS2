@@ -1,0 +1,61 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600' width='600' height='600'>
+  <defs>
+    <linearGradient id='goldGrad' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#F9E7BA'/>
+      <stop offset='50%' stop-color='#D4A359'/>
+      <stop offset='100%' stop-color='#9E6F2B'/>
+    </linearGradient>
+    <linearGradient id='cacaoDark' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#5A341E'/>
+      <stop offset='100%' stop-color='#25130A'/>
+    </linearGradient>
+    <linearGradient id='cacaoMid' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#7E4E30'/>
+      <stop offset='100%' stop-color='#3D2314'/>
+    </linearGradient>
+    <filter id='dropShadow' x='-20%' y='-20%' width='140%' height='140%'>
+      <feDropShadow dx='0' dy='8' stdDeviation='10' flood-color='#000000' flood-opacity='0.4'/>
+    </filter>
+  </defs>
+
+  <!-- Outer Decorative Ring -->
+  <circle cx='300' cy='300' r='270' fill='none' stroke='url(#goldGrad)' stroke-width='4' stroke-dasharray='12 8' opacity='0.85'/>
+  <circle cx='300' cy='300' r='255' fill='none' stroke='url(#goldGrad)' stroke-width='2' opacity='0.6'/>
+
+  <!-- Inner Badge Background -->
+  <circle cx='300' cy='300' r='245' fill='url(#cacaoDark)' filter='url(#dropShadow)'/>
+  <circle cx='300' cy='300' r='235' fill='none' stroke='url(#goldGrad)' stroke-width='1.5' opacity='0.4'/>
+
+  <!-- Two Cacao Pods Motif in Center -->
+  <g transform='translate(300, 240) scale(1.15)'>
+    <!-- Left Cacao Pod -->
+    <path d='M-10,35 C-60,10 -80,-50 -30,-80 C-10,-55 10,-35 0,30 Z' 
+          fill='url(#goldGrad)' opacity='0.95' transform='rotate(-22)'/>
+    <path d='M-10,35 C-50,15 -65,-40 -25,-65 C-10,-45 5,-25 0,30 Z' 
+          fill='url(#cacaoMid)' opacity='0.7' transform='rotate(-22)'/>
+
+    <!-- Right Cacao Pod -->
+    <path d='M10,35 C60,10 80,-50 30,-80 C10,-55 -10,-35 0,30 Z' 
+          fill='url(#goldGrad)' opacity='0.95' transform='rotate(22)'/>
+    <path d='M10,35 C50,15 65,-40 25,-65 C10,-45 -5,-25 0,30 Z' 
+          fill='url(#cacaoMid)' opacity='0.7' transform='rotate(22)'/>
+
+    <!-- Cacao stem / leaves -->
+    <path d='M0,-75 C-15,-100 0,-115 15,-100 C15,-85 5,-75 0,-75 Z' fill='url(#goldGrad)'/>
+    
+    <!-- Sparkles -->
+    <path d='M-70,-20 L-65,-10 L-55,-5 L-65,0 L-70,10 L-75,0 L-85,-5 L-75,-10 Z' fill='url(#goldGrad)'/>
+    <path d='M70,-20 L75,-10 L85,-5 L75,0 L70,10 L65,0 L55,-5 L65,-10 Z' fill='url(#goldGrad)'/>
+    <circle cx='0' cy='-25' r='5' fill='#F9E7BA'/>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x='300' y='360' font-family='serif' font-size='46' font-weight='700' fill='url(#goldGrad)' text-anchor='middle' letter-spacing='4'>DOIS CACAUS</text>
+  
+  <line x1='180' y1='385' x2='250' y2='385' stroke='url(#goldGrad)' stroke-width='2'/>
+  <polygon points='300,381 304,385 300,389 296,385' fill='#F9E7BA'/>
+  <line x1='350' y1='385' x2='420' y2='385' stroke='url(#goldGrad)' stroke-width='2'/>
+
+  <text x='300' y='425' font-family='sans-serif' font-size='20' font-weight='600' fill='#F9E7BA' text-anchor='middle' letter-spacing='8'>CONFEITARIA GOURMET</text>
+  <text x='300' y='465' font-family='serif' font-style='italic' font-size='16' fill='#DCC5B2' text-anchor='middle' letter-spacing='1'>Doces Artesanais &amp; Exclusivos</text>
+</svg>
